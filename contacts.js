@@ -1,5 +1,5 @@
 const { readFile, writeFile } = require("fs/promises");
-//const { nanoid } = require("nanoid");
+const { v4: uuidv4 } = require("uuid");
 require("colors");
 
 const contactsArray = () => {
@@ -67,7 +67,7 @@ function addContact(name, email, phone) {
   contactsArray()
     .then((contacts) => {
       contacts.push({
-        id: "nanoid()", // mam problem z importem biblioteki
+        id: uuidv4(),
         name,
         email,
         phone,
