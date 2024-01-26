@@ -56,7 +56,7 @@ async function removeContact(contactId) {
     })
     .then((result) =>
       console.log(
-        `Your deleted is contact\n${result.name}\n${result.phone}\n${result.email}`
+        `Your deleted contact is\n${result.name}\n${result.phone}\n${result.email}`
           .yellow
       )
     )

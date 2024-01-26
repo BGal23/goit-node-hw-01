@@ -2,7 +2,7 @@ const { Command } = require("commander");
 const program = new Command();
 const path = require("path");
 
-const baseDir = "/Users/bgal23/Documents/GitHub/goit-node-hw-01";
+const baseDir = __dirname;
 const fileName = "contacts.js";
 const contactsPath = path.join(baseDir, fileName);
 
